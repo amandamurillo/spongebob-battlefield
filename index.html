@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spongebob RPG</title>
+                        
+<!-- Link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+                        
+<!-- Link to the Bootstrap library -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+                        
+<!-- Link to style.css and reset.css file -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  </head>
+                      
+  
+  <body>
+                        
+    <!-- Overall Bootstrap grid -->
+      <div class="container">
+                        
+    <!-- Jumbotron with title -->
+      <div class="jumbotron">
+                        
+        <h1 class="text-center"><strong> Spongebob RPG </strong></h1>
+        <h2 class="text-center">Choose Your Character</h2>
+                        
+      </div> <!-- End Jumbotron -->
+                        
+    <!-- Contents of the game-->
+        <div class="row">
+                        
+    <!-- Available characters -->
+          <div class="col-lg-12" id="characters-available">
+            <span class="character-image available-character" id="gary-character">
+              <p>Gary</p>
+              <img src="assets/images/gary.jpeg" alt="Gary Character" id="gary-image">
+              <p class="health">120</p>
+            </span>
+                        
+            <span class="character-image available-character" id="patrick-character">
+              <p>Patrick</p>
+              <img src="assets/images/patrick.jpg" alt="Patrick Character" id="patrick-image">
+              <p class="health">100</p>
+            </span>
+                        
+            <span class="character-image available-character" id="plankton-character">
+              <p>Plankton</p>
+              <img src="assets/images/plantkton.jpg" alt="Plankton Character" id="plankton-image">
+              <p class="health">150</p>
+            </span>
+                        
+            <span class="character-image available-character" id="spongebob-character">
+              <p>Spongebob</p>
+              <img src="assets/images/spongebob.jpg" alt="Spongebob Character" id="spongebob-image">
+              <p class="health">180</p>
+            </span>
+          </div> 
+                        
+      <!-- Your chosen character -->
+          <div class="col-lg-12" id="chosen-character">
+            <h2>Your Character</h2>
+          </div> <!-- End your chosen character-->
+                        
+      <!-- Enemies available to attack -->
+          <div class="col-lg-12" id="enemies-available">
+            <h2>Enemies Available To Attack</h2>
+          </div> <!-- End enemies available to attack -->
+                        
+      <!-- Fight section -->
+          <div class="col-lg-12" id="fight-section">
+            <h2>Fight Section</h2>
+            <button id="attack">Attack</button>
+          </div> <!-- End fight section -->
+                        
+      <!-- Defender section -->
+          <div class="col-lg-12" id="defender-section">
+            <h2>Defender</h2>
+          </div> <!-- End defender section -->
+                        
+      <!-- Game message section -->
+          <div class="col-lg-12" id="message-section">
+              <div id="game-message"></div>
+                <button id="restart">Restart</button>
+            </div> <!-- Game message section -->           
+            
+          </div> <!-- End contents of the game -->
+                        
+      </div> <!-- End Bootstrap grid -->
+                        
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+</html>
