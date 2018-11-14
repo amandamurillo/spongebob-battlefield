@@ -215,18 +215,18 @@ function moveToEnemies() {
         initializeCharacter(spongebob);
         characterSelected = true;
   
-        // Display the chosen character
+        // Display chosen character
         $("#spongebob-character").removeClass("available-character").addClass("chosen-character");
         $("#chosen-character").append(this);
   
-        // Move the remaining characters to the enemies section
+        // Move  remaining characters to the enemies section
         moveToEnemies();
       } else if ((characterSelected == true) && (defenderSelected == false)) {
         // User is choosing the defender
         if($("#spongebob-character").hasClass("enemy-character")) {
           $("#game-message").empty();
   
-          // Set the user's enemy
+          // Set user's enemy
           initializeDefender(spongebob);
           defenderSelected = true;
   
@@ -253,12 +253,12 @@ function moveToEnemies() {
         // User's attack power increases
         character.attack = character.attack + character.baseAttack;
   
-        // If defender is still alive, they counter attack the user
+        // If defender is still alive, counter attack the user
         if (defender.health > 0) {
           character.health = character.health - defender.baseAttack;
           $(".chosen-character").children(".health").html(character.health);
   
-          // Check if the user survives the attack
+          // Check if user survives attack
           if (character.health > 0) {
             $("#game-message").append("<p>" + defender.name + " attacked you back for " + defender.baseAttack + " damage.</p>");
           } else {
@@ -267,7 +267,7 @@ function moveToEnemies() {
             $("#restart").show();
           }
         } else {
-          // Defender is defeated
+          // Defender  defeated
           enemiesDefeated++;
           defenderSelected = false;
           $("#game-message").html("<p>You have defeated " + defender.name + ". Choose another enemy.</p>");
