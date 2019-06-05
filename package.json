@@ -1,0 +1,12 @@
+{
+    "name": "Spongebob_battlefield",
+    "version": "1.0.0",
+    "description": "Project Description",
+    "scripts": {
+      "start": "serve",
+    },
+    "dependencies": {
+      "serve": "^10.0.1"
+    },
+    "author": "Amanda Murillo"
+  }
