@@ -1,24 +1,10 @@
-// ----- Global Variables ----- //
 
-// Has the user selected their character
 var characterSelected = false;
-
-// Has the user selected the defender
 var defenderSelected = false;
-
-// Variable to store the user's chosen character
 var character = {};
-
-// Variable to store the chosen enemy
 var defender = {};
-
-// Number of enemies defeated
 var enemiesDefeated = 0;
-
-// Boolean to indicate whether or not the game is over
 gameOver = false;
-
-// ----- Character Objects ----- //
 
 var gary = {
     name: "Gary",
